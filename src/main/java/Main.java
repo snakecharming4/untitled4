@@ -10,11 +10,12 @@ public class Main {
 
 
             System.out.println("Hello World");
-            System.setProperty("webdriver.chrome.driver", "C:\\chromedriver.exe");
+            System.setProperty("webdriver.chrome.driver", "C:\\chromedriver1\\chromedriver.exe");
             WebDriver driver = new ChromeDriver();
             driver.get("https://www.booking.com");
             System.out.println(driver.getTitle());
             WebElement element = driver.findElement(By.className("sb-destination__input"));
-            System.out.println(element.getAttribute("placeholder"...);
+            System.out.println(element.getAttribute("placeholder"));
+// komentarz do jeszcze nowszego brancha
         }
     }
